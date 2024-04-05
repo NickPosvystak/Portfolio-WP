@@ -1,4 +1,14 @@
+/*--------------------------------
+# Variables
+-----------------------------------*/
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&directive");
+@import "variables";
+
+/*--------------------------------
+# Layout
+-----------------------------------*/
 
 @import "layout/header";
+@import "layout/typography";
+@import "layout/buttons";
