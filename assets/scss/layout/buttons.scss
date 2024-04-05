@@ -19,6 +19,11 @@
   &--primary {
     padding: 17px 36px;
     background-color: $primary;
-    color: $white;
+    color: $red;
+  }
+  &--secondary {
+    padding: 17px 30px; /* Adjust padding as needed */
+    color: $dark; /* Specify secondary button text color */
+    margin-left: 10px;
   }
 }
