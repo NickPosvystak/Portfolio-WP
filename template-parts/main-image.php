@@ -10,10 +10,16 @@ $contact_me = get_field('contact_me');
 $contact_link = get_field('contact_link');
 
 ?>
-<section id="main-image" class="main-image-home">
-    <?php if ($main_image <> '') : ?>
-        <img src="<?php echo $main_image['url']; ?>" alt="<?php echo $main_image['title']; ?>" class="main-image-home">
-    <?php endif; ?>
+<section id="main-image" class="main-image-container">
+    <div class="contact-content-image">
+
+
+        <?php if ($main_image <> '') : ?>
+            <img src="<?php echo $main_image['url']; ?>" alt="<?php echo $main_image['title']; ?>" class="main-image-home">
+        <?php endif; ?>
+
+    </div>
+
     <div class="contact-content">
 
 
