@@ -11,7 +11,7 @@ $contact_link = get_field('contact_link');
 
 ?>
 <section id="main-image" class="main-image-container">
-    <div class="contact-content-image">
+    <div class="image-content-box">
 
 
         <?php if ($main_image <> '') : ?>
@@ -20,7 +20,7 @@ $contact_link = get_field('contact_link');
 
     </div>
 
-    <div class="contact-content">
+    <div class="contact-content-box">
 
 
         <?php if ($contact_me <> '') : ?>
