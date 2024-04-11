@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .container-images {
@@ -11,8 +12,9 @@
 }
 
 .work-box {
-//   flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
-//   margin: 10px; /* Adjust the margin as needed */
+  padding: 10px;
+
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .work-image {
