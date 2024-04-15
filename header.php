@@ -17,6 +17,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
     <header>
         <div class="container">
             <a href="<?php echo home_url(); ?>" class="logo">
