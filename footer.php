@@ -31,7 +31,7 @@
 
 
 
-    <footer class="header-footer">
+    <footer class="container-footer">
 
         <div class="box-footer">
             <a href="<?php echo home_url(); ?>" class="logo">
