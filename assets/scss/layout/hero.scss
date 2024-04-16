@@ -1,32 +1,51 @@
 .hero {
-  background-color: #bef194; /* Set background color */
-  text-align: center; /* Center align content */
+    background-color: #bef194; 
+    text-align: center; 
+}
 
-  h1 {
-    color: #333; /* Set heading color */
-    font-size: 36px; /* Set heading font size */
-    margin-bottom: 20px; /* Add bottom margin */
-  }
+.title-hero {
+    color: #333; 
+    font-size: 20px; 
+    margin-bottom: 8px; 
+}
 
-  p {
-    color: #666; /* Set paragraph color */
-    font-size: 18px; /* Set paragraph font size */
+.description-hero {
+    color: #666; 
+    font-size: 14px; /* Adjust font size for readability */
     text-align: justify;
-  }
+}
+
+@media only screen and (min-width: 768px) {
+    .title-hero {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .description-hero {
+        font-size: 18px; /* Adjust font size for larger screens */
+    }
+}
+
+.container-hero {
+    background-color: #bedaff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .row {
-  display: flex; /* Use flexbox for row */
-  justify-content: space-between; /* Space items evenly */
-  margin-top: 30px; /* Add top margin */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .col-md-6 {
-  text-align: center;
-  width: calc(50% - 15px); /* Set column width */
-  padding: 0 15px; /* Add horizontal padding */
+    text-align: center;
+    width: calc(50% - 15px);
+    padding: 0 15px;
 }
-.hero-image {
-  width: 600px;
 
+.hero-image {
+    width: 100%; /* Ensure image scales appropriately */
+    max-width: 600px; /* Limit maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
 }

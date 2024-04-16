@@ -12,16 +12,16 @@ $hero_image = get_field('hero_image');
 ?>
 
 <section id="home-hero" class="hero">
-    <div class="container">
+    <div class="container-hero">
         <div class="row">
             <div class="col-md-6">
 
                 <?php if ($hero_title <> '') : ?>
-                    <h1><?php echo $hero_title; ?></h1>
+                    <h1 ><?php echo $hero_title; ?></h1>
                 <?php endif; ?>
 
                 <?php if ($hero_descriptions <> '') : ?>
-                    <p><?php echo $hero_descriptions; ?></p>
+                    <p class="description-hero"><?php echo $hero_descriptions; ?></p>
                 <?php endif; ?>
 
                 <?php if ($first_button <> '') : ?>
