@@ -28,70 +28,67 @@ $link_to_work_three = $section_images_three['link_to_work_three'];
 
 <section id="section-1" class="section-images">
 
-    <div class="container-images">
-        <div class="work-box">
+    <div class="work-box">
 
+        <?php if ($image_work <> '') : ?>
+            <img src="<?php echo $image_work['url']; ?>" alt="<?php echo $image_work['title']; ?>" class="work-image">
+        <?php endif; ?>
 
+        <?php if ($work_title <> '') : ?>
+            <h2 class="work-title"><?php echo $work_title; ?></h2>
+        <?php endif; ?>
 
-            <?php if ($image_work <> '') : ?>
-                <img src="<?php echo $image_work['url']; ?>" alt="<?php echo $image_work['title']; ?>" class="work-image">
-            <?php endif; ?>
+        <?php if ($description_work <> '') : ?>
+            <p class="work-description"><?php echo $description_work; ?></p>
+        <?php endif; ?>
 
-            <?php if ($work_title <> '') : ?>
-                <h2 class="work-title"><?php echo $work_title; ?></h2>
-            <?php endif; ?>
+        <?php if ($link_to_work <> '') : ?>
+            <a href=" <?php echo $link_to_work['url']; ?>" class="work-link">
+                <?php echo $link_to_work['title']; ?></a>
+        <?php endif; ?>
 
-            <?php if ($description_work <> '') : ?>
-                <p class="work-description"><?php echo $description_work; ?></p>
-            <?php endif; ?>
-
-            <?php if ($link_to_work <> '') : ?>
-                <a href=" <?php echo $link_to_work['url']; ?>" class="work-link">
-                    <?php echo $link_to_work['title']; ?></a>
-            <?php endif; ?>
-
-
-        </div>
-        <div class="work-box">
-
-            <?php if ($image_work_two <> '') : ?>
-                <img src="<?php echo $image_work_two['url']; ?>" alt="<?php echo $image_work_two['title']; ?>" class="work-image">
-            <?php endif; ?>
-
-            <?php if ($work_title_two <> '') : ?>
-                <h2 class="work-title"><?php echo $work_title_two; ?></h2>
-            <?php endif; ?>
-
-            <?php if ($description_work_two <> '') : ?>
-                <p class="work-description"><?php echo $description_work_two; ?></p>
-            <?php endif; ?>
-
-            <?php if ($link_to_work_two <> '') : ?>
-                <a href=" <?php echo $link_to_work_two['url']; ?>" class="work-link">
-                    <?php echo $link_to_work_two['title']; ?></a>
-            <?php endif; ?>
-        </div>
-
-        <div class="work-box">
-
-            <?php if ($image_work_three <> '') : ?>
-                <img src="<?php echo $image_work_three['url']; ?>" alt="<?php echo $image_work_three['title']; ?>" class="work-image">
-            <?php endif; ?>
-
-            <?php if ($work_title_three<> '') : ?>
-                <h2 class="work-title"><?php echo $work_title_three; ?></h2>
-            <?php endif; ?>
-
-            <?php if ($description_work_three <> '') : ?>
-                <p class="work-description"><?php echo $description_work_three; ?></p>
-            <?php endif; ?>
-
-            <?php if ($link_to_work_three <> '') : ?>
-                <a href=" <?php echo $link_to_work_three['url']; ?>" class="work-link">
-                    <?php echo $link_to_work_three['title']; ?></a>
-            <?php endif; ?>
-        </div>
 
     </div>
+    <div class="work-box">
+
+        <?php if ($image_work_two <> '') : ?>
+            <img src="<?php echo $image_work_two['url']; ?>" alt="<?php echo $image_work_two['title']; ?>" class="work-image">
+        <?php endif; ?>
+
+        <?php if ($work_title_two <> '') : ?>
+            <h2 class="work-title"><?php echo $work_title_two; ?></h2>
+        <?php endif; ?>
+
+        <?php if ($description_work_two <> '') : ?>
+            <p class="work-description"><?php echo $description_work_two; ?></p>
+        <?php endif; ?>
+
+        <?php if ($link_to_work_two <> '') : ?>
+            <a href=" <?php echo $link_to_work_two['url']; ?>" class="work-link">
+                <?php echo $link_to_work_two['title']; ?></a>
+        <?php endif; ?>
+    </div>
+
+    <div class="work-box">
+
+        <?php if ($image_work_three <> '') : ?>
+            <img src="<?php echo $image_work_three['url']; ?>" alt="<?php echo $image_work_three['title']; ?>" class="work-image">
+        <?php endif; ?>
+
+        <?php if ($work_title_three <> '') : ?>
+            <h2 class="work-title"><?php echo $work_title_three; ?></h2>
+        <?php endif; ?>
+
+        <?php if ($description_work_three <> '') : ?>
+            <p class="work-description"><?php echo $description_work_three; ?></p>
+        <?php endif; ?>
+
+        <?php if ($link_to_work_three <> '') : ?>
+            <a href=" <?php echo $link_to_work_three['url']; ?>" class="work-link">
+                <?php echo $link_to_work_three['title']; ?></a>
+        <?php endif; ?>
+    </div>
+
+
 
 </section>
