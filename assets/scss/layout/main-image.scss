@@ -22,19 +22,21 @@
   border-radius: 14px;
 }
 .contact-title {
-   font-size: 1em;
+   font-size: 10px;  
+   line-height: 15px;
  text-align: center;
   color: #131212;
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 .contact-link {
   background-color: #322626;
   color: #f6f1f1;
-  padding: 10px 20px;
+  font-size: 10px;
+  padding: 4px 10px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  margin: 10px 0 20px;
+  margin: 0px 0 10px;
   &:hover {
     background-color: darken(#635d5d, 10%);
   }
