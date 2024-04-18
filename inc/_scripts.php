@@ -19,4 +19,13 @@ function portfolio_scritps()
         _VERSION,
         true
     );
-}
+
+    wp_enqueue_script(
+        'burger-script',
+        get_template_directory_uri() . '/assets/js/burger.js', 
+        array(),
+        _VERSION,
+        true
+    );
+
+ }

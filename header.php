@@ -28,11 +28,15 @@
                 'theme_location' => 'header_menu',
                 'menu_id'=> 'header_menu',
                 'container' => 'nav',
-                'container_class' => 'header-menu',
+                'container_class' => 'navig-menu',
                 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
             ]);
 
             ?>
+
+            <div class="burger">
+                <span></span>
+            </div>
         </div>
 
     </header>
