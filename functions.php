@@ -1,18 +1,26 @@
 <?php
-if (!defined('ABSPATH')) exit;
 
-// Define constants
-if (!defined('_VERSION')) {
-	define('_VERSION', '1.0.0');
+/**
+ * This file contains functions and hooks.
+ *
+ * @package Variations
+ * 
+ */
+
+/**
+ * Define version to use it with JS and CSS files.
+ */
+if (!defined('VARIATIONS_THEME_VERSION')) {
+
+    define('VARIATIONS_THEME_VERSION', wp_get_theme()->get('Version'));
 }
 
-// Include styles and scripts
-require get_template_directory() . './inc/_scripts.php';
+/**
+ * Enqueue Scripts.
+ */
+require_once get_template_directory() . '/inc/enqueue-scripts.php';
 
-// Post types
-require get_template_directory() . './inc/_post-types.php';
-
-
-//Register menus
- require get_template_directory() . './inc/_menus.php';
- 
+/**
+ * Hooks and actions.
+ */
+require_once get_template_directory() . '/inc/hooks-actions.php';
